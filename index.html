@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DLL Enrollment Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1> Student Enrollment Form</h1>
+
+<h3>Instructions:</h3>
+<ol>
+  <li>Fill in the form fields.</li>
+  <li>Check your interests.</li>
+  <li>Click "Enroll Now" to submit.</li>
+</ol>
+
+<form>
+  <label for="fullName">Full Name:</label>
+  <input type="text" id="fullName" name="fullName" required>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="18" required>
+
+  <label>Sex:</label>
+  <input type="radio" id="male" name="sex" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="sex" value="female">
+  <label for="female">Female</label>
+
+  <label for="course">Course:</label>
+  <select id="course" name="course">
+    <option value="bsit">BSIT</option>
+    <option value="bssw">BSSW</option>
+    <option value="bspa">BSPA</option>
+    <option value="bse">BSE</option>
+    <option value="bsa">BSA</option>
+    <option value="bsais">BSAIS</option>
+    <option value="btvte">BTVTE</option>
+    <option value="abels">ABELS</option>
+    <option value="dhrs">DHRS</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label>Interests:</label>
+  <input type="checkbox" id="webDev" name="interests[]" value="webDev">
+  <label for="webDev">Web Development</label>
+  <input type="checkbox" id="dataSci" name="interests[]" value="dataSci">
+  <label for="dataSci">Data Science</label>
+  <input type="checkbox" id="networking" name="interests[]" value="networking">
+  <label for="networking">Networking</label>
+  <input type="checkbox" id="graphicDesign" name="interests[]" value="graphicDesign">
+  <label for="graphicDesign">Graphic Design</label>
+
+  <input type="submit" value="Enroll Now">
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Course</th>
+      <th>Interests</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Arnel </td>
+      <td>arnelcaparros02@gmail.com</td>
+      <td>19</td>
+      <td>Male</td>
+      <td>BSIT</td>
+      <td>Web Development, Data Science</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ivan Raund</td>
+      <td>ivanaguiwas@gmail.com</td>
+      <td>20</td>
+      <td>Male</td>
+      <td>BSIT</td>
+      <td>Graphic Design</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Diane Kirvy</td>
+      <td>dianekirvyasis@gmail.com</td>
+      <td>20</td>
+      <td>Female</td>
+      <td>BSSW</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>John Rey</td>
+      <td>johnreyniño@gmail.com</td>
+      <td>20</td>
+      <td>Male</td>
+      <td>BSE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Kristel Imari</td>
+      <td>kristelimaricalado@gmail.com</td>
+      <td>20</td>
+      <td>Female</td>
+      <td>BSIT</td>
+      <td>Data Science, Graphic Design</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
